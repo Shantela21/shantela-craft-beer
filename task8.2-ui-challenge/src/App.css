@@ -5,48 +5,152 @@
 }
 html,
 body,
-:root {
+#root {
   width: 100%;
   height: 100%;
 }
 
-#container{
+/* #container {
   display: flex;
-  border: 1px solid red;
-  height: 70vh;
-  width: 100vw;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
   justify-content: end;
+  background-color: green;
+} */
 
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 15%;
 }
 
+.navBar .left {
+  display: flex;
+  padding: 1rem;
+}
+.navBar .left div {
+  padding: 1rem;
+}
+.navBar .right {
+  display: flex;
+  padding: 1rem;
+}
+.navBar .right div {
+  display: flex;
+  padding: 1rem;
+}
+#register{
+ background-color: lab(97.48% -0.69 1.91);
+ border: 1px solid rgb(114, 111, 111);
+ border-radius: 12px;
+ font-size: medium;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+  width: 80%;
+  height: 50px;
+}
 #title{
-  /* grid-area: header; */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: xx-large;
+  font-weight: 600;
+  margin-top: 5px;
+  padding: 7%;
+  margin-bottom: -10%;
+  }
+
+  #paragraph{
+    margin-top: -10%;
+    font-size: 25px;
+    padding: 7%;
+    margin-bottom: -3%;
+    
+  }
+#button{
+    background-color: oklab(12.856000000000002% 0 -0.00001);
+    border: 1px solid rgb(15, 15, 15);
+    border-radius: 12px;
+    font-size: bold;
+    font-weight: 300;
+    color: aliceblue;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    margin-top: 5px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 10%;
+    margin-left: 7%;
+  }
+.picture{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-position: center;
+}
+.databiz{
+    padding: 7%;
+   display: flex;
+   margin-top: -4% ;
+  /* padding: 1rem; */
+  justify-content: space-evenly;
+  width: 100%;
+}
+.audiophile{
+    display: flex;
+    padding: 0;
+  
+}
+.herosection{
+  display: flex;
+
+}
+.container{
+  display: flex;
+  height: 80%;
 }
 
-#nav{
- text-align: right;
- display: flex;
- justify-content: end;
- border:5px solid blue;
- height: 50px;
- width: 90%;
+.col{
+  width: 50%;
+
 }
 
-#logo{
+/*
+
+#nav {
+  text-align: right;
+  display: flex;
+  justify-content: end;
+  height: 50px;
+  width: 90%;
+}
+/*
+#logo {
   background-image: url(./assets/images/logo.svg);
   display: flex;
   text-align: left;
   height: 50px;
   width: 10%;
   justify-content: start;
-  /* border:5px solid green; */
+  /* border:5px solid green; 
   background-repeat: no-repeat;
   margin: 10px;
   padding: 10px;
   background-position: 20px;
 }
 
-/* #footer{
+
+#footer{
    position: fixed;
    left: 0;
    bottom: 0;
@@ -56,14 +160,112 @@ body,
    text-align: center;
    background-image: url(./assets/images/);
   
-} */
-/* .main nav{
+} 
+ .main nav{
   aria-label: Primary nav;
-} */
+}
 
 #register{
- background-color: yellow;
- border: 1px solid red;
+ background-color: lab(97.48% -0.69 1.91);
+ border: 1px solid rgb(114, 111, 111);
+ border-radius: 12px;
+ font-size: medium;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+}
+
+#rightbuttons{
+  display: flex;
+  text-align: left;
+  height: 50px;
+  width: 10%;
+  justify-content: start;
+  /* border:5px solid green; 
+  background-repeat: no-repeat;
+  margin: 10px;
+  padding: 10px;
+  background-position: 20px;
+
+}
+
+
+
+#container1{
+  
+  border: 2px solid rgb(7, 247, 79);
+  height: 70vh;
+  width: 50vw;
+  justify-content: flex-start;
+
+}
+
+/* 
+#login{
+  background-color: hsl(60, 56%, 98%);
+ border: 1px solid rgb(122, 121, 121);
+ border-radius: 12px;
+ font-size: medium;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+}
+
+#leftbuttons{
+  display: flex;
+  text-align: left;
+  height: 50px;
+  width: 10%;
+  justify-content: start;
+  /* border:5px solid green; 
+  background-repeat: no-repeat;
+  margin: 10px;
+  padding: 10px;
+  background-position: 20px;
+
+}
+#features{
+  /* background-image: url(./assets/images/icon-arrow-down.svg); 
+  background-repeat: no-repeat;
+  background-color: white;
+ /* border: 1px solid red; 
+ border-radius: 12px;
+ font-size: medium;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer
+}
+
+#company{
+   background-color: white;
+ /* border: 1px solid red; 
+ border-radius: 12px;
+ font-size: medium;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  /* display: flex; 
+}
+
+#careers{
+   background-color: white;
+ /* border: 1px solid red; 
  border-radius: 12px;
  font-size: medium;
   padding: 20px;
@@ -75,17 +277,42 @@ body,
   cursor: pointer;
 }
 
-#rightbuttons{
-  display: flex;
-  text-align: left;
-  height: 50px;
-  width: 10%;
-  justify-content: start;
-  /* border:5px solid green; */
-  background-repeat: no-repeat;
-  margin: 10px;
-  padding: 10px;
-  background-position: 20px;
-
+#about{
+   background-color: white;
+ /* border: 1px solid red; 
+ border-radius: 12px;
+ font-size: medium;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
+
+#title{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: xx-large;
+  font-weight: 800;
+  }
+
+  #paragraph{}
+
+  #button{
+    background-color: oklab(12.856000000000002% 0 -0.00001);
+    border: 1px solid rgb(15, 15, 15);
+    border-radius: 12px;
+    font-size: medium;
+    font-weight: 300;
+    color: aliceblue;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+  
+  } */

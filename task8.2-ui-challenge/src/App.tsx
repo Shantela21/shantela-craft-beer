@@ -1,25 +1,32 @@
-import './App.css'
+import "./App.css";
+import Button from "./components/Button";
 // import Footer from './components/Footer';
-import Logo from './components/Logo'
-import Navbar from './components/Navbar'
-import Rightbuttons from './components/navbuttons/Rightbuttons';
+import Logo from "./components/Logo";
+import Navbar from "./components/Navbar";
+
+import Paragraph from "./components/Paragraph";
+import Picture from "./components/Picture";
+import Title from "./components/Title";
 
 function App() {
-  
-
   return (
     <>
-      <div id="container">
-        <div id="logo"></div>
-        <div id="nav"></div>
-      </div>
+    <Navbar/>
+      <div className="container">
+        
+        <div className="col">
+          <Title />
+          <Paragraph />
+          <Button />
+          <Logo />
+        </div>
 
-      {/* <Logo /> */}
-      <Navbar />
-      {/* <Rightbuttons/> */}
-      {/* <Footer/> */}
+        <div className="col">
+          <Picture />
+        </div>
+      </div>
     </>
   );
 }
 
-export default App
+export default App;
