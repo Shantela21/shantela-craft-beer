@@ -10,121 +10,180 @@ body,
   height: 100%;
 }
 
-/* #container {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
-  justify-content: end;
-  background-color: green;
-} */
-
 .navBar {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  align-items: center;
+  padding: 0 1%;
+  width: 95%;
   height: 15%;
+  color: rgb(94, 92, 92);
 }
 
 .navBar .left {
   display: flex;
-  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
-.navBar .left div {
-  padding: 1rem;
-}
+
 .navBar .right {
   display: flex;
-  padding: 1rem;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
 }
-.navBar .right div {
+
+#register {
   display: flex;
-  padding: 1rem;
-}
-#register{
- background-color: lab(97.48% -0.69 1.91);
- border: 1px solid rgb(114, 111, 111);
- border-radius: 12px;
- font-size: medium;
-  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: lab(97.48% -0.69 1.91);
+  border: 1px solid rgb(133, 129, 129);
+  border-radius: 12px;
+  font-size: medium;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 16px;
-  margin: 2px 2px;
   cursor: pointer;
-  width: 80%;
-  height: 50px;
 }
-#title{
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: xx-large;
-  font-weight: 600;
-  margin-top: 5px;
-  padding: 7%;
-  margin-bottom: -10%;
-  margin-left: 9%;
-  }
 
-  #paragraph{
-    margin-top: -10%;
-    font-size: 25px;
-    padding: 7%;
-    margin-bottom: -3%;
-    margin-left: 9%;
-  }
-#button{
-    background-color: oklab(12.856000000000002% 0 -0.00001);
-    border: 1px solid rgb(15, 15, 15);
-    border-radius: 12px;
-    font-size: bold;
-    font-weight: 300;
-    color: aliceblue;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    margin-top: 5px;
-    cursor: pointer;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 20%;
-    margin-left: 16%;
-    display: flex;
-  }
-.picture{
+#title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+#paragraph {
+  font-size: 2rem;
+}
+#button {
+  background-color: oklab(12.856000000000002% 0 -0.00001);
+  border: 1px solid rgb(15, 15, 15);
+  border-radius: 12px;
+  font-size: bold;
+  font-weight: 300;
+  color: #eef3f7;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 20%;
+}
+.picture {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
+  background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
 }
-.databiz{
-    padding: 7%;
-   display: flex;
-   margin-top: -4% ;
-  /* padding: 1rem; */
-  justify-content: space-evenly;
+.databiz {
+  display: flex;
   width: 100%;
+  justify-content: space-between;
+  margin-top: 10%;
 }
-.audiophile{
-    display: flex;
-    padding: 0;
-  
-}
-.herosection{
+.audiophile {
   display: flex;
-
 }
-.container{
+.herosection {
   display: flex;
+}
+.container {
+  display: flex;
+  flex-direction: row;
   height: 80%;
 }
 
-.col{
+.col1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 50%;
+  padding: 0 6%;
+}
+.col2 {
+  width: 50%;
+  padding: 0 6%;
+}
+.col1-subdiv {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
 
+.arrow {
+  padding-left: 0.5rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile {
+  display: none;
+}
+
+.desktop {
+  display: block;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    width: 100%;
+  }
+
+  .col2 {
+    width: 100%;
+    border: 2px solid red;
+  }
+
+  .picture {
+    height: 50vh;
+    width: 100%;
+  }
+
+  #title {
+    font-size: medium;
+  }
+  #paragraph {
+    text-align: start;
+    justify-items: center;
+    display: inline;
+    text-align: start;
+  }
+  #button {
+    width: 10rem;
+    margin-left: 60%;
+  }
+  .databiz {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .audiophile {
+    display: flex;
+    padding-left: 8%;
+  }
+  .col1 {
+    width: 100%;
+  }
+  .desktop {
+    display: none !important;
+  }
+  .mobile {
+    display: block !important;
+  }
 }
 
 /*

@@ -1,9 +1,14 @@
 import React from "react";
 
-export default function Picture() {
+export default function Picture({ image }) {
   return (
-    <div className="picture">
-      <img src={"/src/assets/images/image-hero-desktop.png"} height="100%"></img>
-    </div>
+    <div
+      className="picture"
+      style={{
+        width: "100%",
+        height: "100%",
+        backgroundImage: `url(${image})`,
+      }}
+    ></div>
   );
 }

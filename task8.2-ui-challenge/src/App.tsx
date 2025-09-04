@@ -7,22 +7,23 @@ import Navbar from "./components/Navbar";
 import Paragraph from "./components/Paragraph";
 import Picture from "./components/Picture";
 import Title from "./components/Title";
+import hero from "./assets/images/image-hero-desktop.png";
 
 function App() {
   return (
     <>
-    <Navbar/>
+      <Navbar />
       <div className="container">
-        
-        <div className="col">
-          <Title />
-          <Paragraph />
-          <Button />
+        <div className="col1">
+          <div className="col1-subdiv">
+            <Title />
+            <Paragraph />
+            <Button />
+          </div>
           <Logo />
-        </div>
-
-        <div className="col">
-          <Picture />
+          <div className="col2">
+            <Picture image={hero} />
+          </div>
         </div>
       </div>
     </>
