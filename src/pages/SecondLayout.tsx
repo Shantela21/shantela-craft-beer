@@ -5,7 +5,7 @@ export default function SecondLayout() {
   return (
     <div>
       <h2>This is the second page of the layout.</h2>
-      <form>
+      <form className='form'>
         <label htmlFor="fname">First name:</label>
         <br />
         <input type="text" id="fname" name="fname" />
